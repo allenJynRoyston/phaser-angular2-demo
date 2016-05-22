@@ -8,8 +8,13 @@ This repo is based off our submission and includes everything you need to get st
   - npm install
   - npm start
   - make your game!
+  - Should load the default Angular2 quickstart page, initiate a preload, and then present an animated Phaser logo.
 
-Should load the default Angular2 quickstart page, initiate a preload, and then present an animated Phaser logo.
+
+### Required
+  - NPM
+  - Typescript (Not required by highly suggested)
+
 
 ### How it Works
 If you want to include Phaser in your own project, you'll have do the following steps.  You shouldn't have to alter any files; just follow the following instructions.
