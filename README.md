@@ -10,7 +10,7 @@ This repo is based off our submission and includes everything you need to get st
 
 ### Required
   - NPM
-  - Typescript (Not required by highly suggested)
+  - Typescript (Not required but highly recommended)
   
 
 ### Install
