@@ -82,11 +82,10 @@ import {PhaserComponent}  from '[folderLocation]/phaser/phaser'
 ### Version
 1.0.1
 
-### Updates
- - 
+
 
 ### Live Demo 
-[Check it out](http://totallynotarobot.2016.angularattack.io/ "Title")
+[Check it out](http://totallynotarobot.2016.angularattack.io/ "Angular Attack 2016")
 
 
 ### Dependencies
