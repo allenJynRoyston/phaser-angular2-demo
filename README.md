@@ -44,8 +44,8 @@ import {PhaserComponent}  from '[folderLocation]/phaser/phaser'
 <phaser (phaser)="phaserLink1($event)" [settings]="{file:'node_modules/phaser/build/phaser.min.js'}"></phaser>
 ```
 <br>
-4a.)  <strong>Make sure you've downloaded the phaser source code.</strong>    It's included in the repo but might not be in your project.  Include the file location in the <strong>settings</strong> parameter.
-4b.)  npm install phaser --save-dev
+4a.)  <strong>Make sure you've downloaded the phaser source code.</strong>    It's included in the repo but might not be in your project.  Include the file location in the <strong>settings</strong> parameter.<br>
+4b.)  You can install it from NPM:  npm install phaser --save-dev
 
 <br>
 5.)  In your component, make sure you include the following script.
