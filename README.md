@@ -1,7 +1,7 @@
 # Angular2/Phaser Seed Project
 
 ### What Am I?!
-I created this component for the Angular Attack 2016 contest and I wanted to share it as soon as I found a way to simplify it and clean it up.  [Check out our submission here](http://totallynotarobot.2016.angularattack.io/ "Angular Attack 2016")  
+I created this seed project for the Angular Attack 2016 contest and I wanted to share it as soon as I found a way to simplify it and clean it up.  [Check out our submission here.](http://totallynotarobot.2016.angularattack.io/ "Angular Attack 2016")  If you want to integrate the components needed into an existing project, follow the instructions below in the Integration section.
 <br>
 This repo is based off our submission and includes everything you need to get started.
   - Download or clone this repo.
@@ -16,7 +16,7 @@ This repo is based off our submission and includes everything you need to get st
   - Typescript (Not required by highly suggested)
 
 
-### How it Works
+### Integration
 If you want to include Phaser in your own project, you'll have do the following steps.  You shouldn't have to alter any files; just follow the following instructions.
 
 1.) Grab the Phaser component and place it into your own project.  It can be found in <strong>app/components/phaser</strong> <br>
