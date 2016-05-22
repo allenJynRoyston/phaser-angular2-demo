@@ -1,9 +1,9 @@
 # Angular2/Phaser Seed Project
 
 ### What Am I?!
-I created this seed project for the Angular Attack 2016 contest and I wanted to share it as soon as I found a way to simplify it and clean it up.  [(Check out our submission here - and if you could, please vote for us!)](http://totallynotarobot.2016.angularattack.io/ "Angular Attack 2016")  If you want to integrate the components needed into an existing project, follow the instructions below in the Integration section.
+I created this seed project based off my submission for the Angular Attack 2016 contest.  I wanted to share it as soon as I found a way to simplify it and clean it up.  [(Check out our submission here - and if you could, please vote for us!)](http://totallynotarobot.2016.angularattack.io/ "Angular Attack 2016")  If you want to integrate the components needed into an existing project, follow the instructions below in the Integration section.
 <br>
-This repo is based off our submission and includes everything you need to get started.
+This repo includes everything you need to get started.
   - Phaser component
   - Angular 2 Quickstart project
   - [Don't know how to make games using Phaser?  Check out some examples - it's easy!](http://phaser.io/ "Phaser.io")  
