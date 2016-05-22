@@ -6,7 +6,7 @@ I created this seed project for the Angular Attack 2016 contest and I wanted to 
 This repo is based off our submission and includes everything you need to get started.
   - Phaser component
   - Angular 2 Quickstart project
-  
+  - [Don't know how to make games using Phaser?  It's pretty easy!](http://phaser.io/ "Phaser.io")  
 
 ### Required
   - NPM
@@ -19,8 +19,6 @@ This repo is based off our submission and includes everything you need to get st
   - npm start
   - Should load the default Angular2 quickstart page, initiate a preload, and then present an animated Phaser logo.
   - make your game by editing the game/phaser1_demo.js file
-
-
 
 
 
