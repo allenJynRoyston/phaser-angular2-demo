@@ -5,12 +5,17 @@ Want to make a game with the amazing Phaser engine and Angular 2?  Well look no 
   - Download or clone this repo.
   - npm install
   - npm start
+  - make your game!
 
-Should load the default Angular2 quickstart page, initiate a preload, and then present the Phaser logo.
+Should load the default Angular2 quickstart page, initiate a preload, and then present an animated Phaser logo.
 
-### Usage
+### How it Works
+If you want to include Phaser in your own project, you'll have do the following steps.  
+
+1.)  Grab the Phaser component and place it into your own project.  It can be found in app/components/phaser
+2.)  Include it in your project.  
 ```javascript
-<phaser (phaser)="phaserLink1($event)" [settings]="{file:'node_modules/phaser/build/phaser.min.js'}"></phaser>
+import {PhaserComponent}  from '[myComponents]/phaser/phaser'
 ```
 
 ### Version
