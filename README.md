@@ -27,7 +27,7 @@ If you want to include Phaser in your own project, you'll have do the following 
 1.) Grab the Phaser component and place it into your own project.  It can be found in <strong>app/components/phaser</strong> <br>
 2.)  Include it in your project.  
 ```javascript
-import {PhaserComponent}  from '[myComponents]/phaser/phaser'
+import {PhaserComponent}  from '[folderLocation]/phaser/phaser'
 ```
 <br>
 3.)  Include it in your components directives.
