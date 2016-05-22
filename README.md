@@ -28,11 +28,28 @@ import {PhaserComponent}  from '[myComponents]/phaser/phaser'
 ```
 <br>
 4.)  Include it in your html as such: 
-```javascript
+```html
 <phaser (phaser)="phaserLink1($event)" [settings]="{file:'node_modules/phaser/build/phaser.min.js'}"></phaser>
 ```
+<br>
+4a.)  Make sure you've downloaded phaser.js.  Include the file location in the settings.  
 
+<br>
+5.)  In your component, make sure you include the following script.
+````script
+   //---------------
+   phaserLink1(phaser:any){
 
+      var js = document.createElement("script");
+          js.type = "text/javascript";
+          js.src = 'game/phaser1_demo.js';  // this is where your game file is located, recommended you use the seed game file included in the git repo
+          document.body.appendChild(js);
+          js.onload = function(){
+             __phaser.game.init(phaser.container, this);
+          }
+   }
+   //---------------
+````
 
 
 
