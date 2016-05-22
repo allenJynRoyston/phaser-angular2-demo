@@ -1,7 +1,9 @@
 # Angular2/Phaser Seed Project
 
 ### What Am I?!
-I created this component for the Angular Attack 2016 contest and I wanted to share it as soon as possible.  [Check it out](http://totallynotarobot.2016.angularattack.io/ "Title")  YOu can do the same too, and pretty quickly if you use this repo.  Everything you need to do is included.
+I created this component for the Angular Attack 2016 contest and I wanted to share it as soon as possible.  [Check it out](http://totallynotarobot.2016.angularattack.io/ "Title")  
+<br>
+You can do the same too, and pretty quickly if you use this repo.  Everything you need to do is included.
   - Download or clone this repo.
   - npm install
   - npm start
