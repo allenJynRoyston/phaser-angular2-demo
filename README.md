@@ -20,10 +20,21 @@ import {PhaserComponent}  from '[myComponents]/phaser/phaser'
 <br>
 3.)  Include it in your directives.
 ```javascript
+@Component({
     directives: [
-      PhaserComponent,
-  	],
+       PhaserComponent,
+  	]
+})
 ```
+<br>
+4.)  Include it in your html as such: 
+```javascript
+<phaser (phaser)="phaserLink1($event)" [settings]="{file:'node_modules/phaser/build/phaser.min.js'}"></phaser>
+```
+
+
+
+
 
 
 ### Version
