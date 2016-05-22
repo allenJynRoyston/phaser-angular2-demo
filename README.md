@@ -6,12 +6,12 @@ Want to make a game with the amazing Phaser engine and Angular 2?  Well look no 
   - npm install
   - npm start
 
-Should bootup the Angular2 Quickstart, initiate a preload, and then present the Phaser logo.
+Should load the default Angular2 quickstart page, initiate a preload, and then present the Phaser logo.
 
 ### Usage
-<code>
-&lt;div ng-parallax pattern="myPattern" speed="0"&gt; &lt; /div&gt; 
-</code>
+```javascript
+<phaser (phaser)="phaserLink1($event)" [settings]="{file:'node_modules/phaser/build/phaser.min.js'}"></phaser>
+```
 
 ### Version
 1.1.2
