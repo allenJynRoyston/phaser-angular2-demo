@@ -49,26 +49,32 @@ import {PhaserComponent}  from '[folderLocation]/phaser/phaser'
 <br>
 5.)  In your component, make sure you include the following script.
 ````script
+export class AppComponent {
+
+
    //---------------
    phaserLink1(phaser:any){
 
       var js = document.createElement("script");
           js.type = "text/javascript";
-          js.src = 'game/phaser1_demo.js';  // this is where your game file is located, recommended you use the seed game file included in the git repo since it has custom initiating/destroy methods
+          js.src = 'game/phaser1_demo.js';
           document.body.appendChild(js);
           js.onload = function(){
              __phaser.game.init(phaser.container, this);
           }
    }
    //---------------
-   
+
    //---------------
    destroyGame(){
       __phaser.destroyGame(function(){
             // do something
       });
    }
-   //---------------   
+   //---------------
+
+
+}
 ````
 
 6.)  It's <strong> HIGHLY RECOMMENDED </strong> you use a seed project game included in the repo.  It has custom init and destroy methods needed to get this to work with Angular 2.  
