@@ -3,7 +3,12 @@
 ### What Am I?!
 I created this seed project for the Angular Attack 2016 contest and I wanted to share it as soon as I found a way to simplify it and clean it up.  [Check out our submission here.](http://totallynotarobot.2016.angularattack.io/ "Angular Attack 2016")  If you want to integrate the components needed into an existing project, follow the instructions below in the Integration section.
 <br><br>
+
 This repo is based off our submission and includes everything you need to get started.
+  - Phaser component
+  - Angular 2 Quickstart project
+
+### Install
   - Download or clone this repo.
   - npm install
   - npm start
