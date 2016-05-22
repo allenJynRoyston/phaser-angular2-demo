@@ -6,11 +6,13 @@ I created this seed project for the Angular Attack 2016 contest and I wanted to 
 This repo is based off our submission and includes everything you need to get started.
   - Phaser component
   - Angular 2 Quickstart project
-  - 
+  
+
 ### Required
   - NPM
   - Typescript (Not required by highly suggested)
-  - 
+  
+
 ### Install
   - Download or clone this repo.
   - npm install
