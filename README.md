@@ -12,11 +12,15 @@ Should load the default Angular2 quickstart page, initiate a preload, and then p
 ### How it Works
 If you want to include Phaser in your own project, you'll have do the following steps.  
 
-1.)  Grab the Phaser component and place it into your own project.  It can be found in app/components/phaser
-2.)  Include it in your project.  
+<ul>
+<li>  Grab the Phaser component and place it into your own project.  It can be found in app/components/phaser</li>
+<li>  Include it in your project.  
 ```javascript
 import {PhaserComponent}  from '[myComponents]/phaser/phaser'
 ```
+
+</li>
+</ul>
 
 ### Version
 1.1.2
