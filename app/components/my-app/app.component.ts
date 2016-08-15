@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
-import {PhaserComponent}  from '../../components/phaser/phaser'
+import {NG2_PHASER}  from '../../../node_modules/ang2-phaser/ng2phaser'
+
 
 declare var __phaser:any;
 
@@ -7,24 +8,23 @@ declare var __phaser:any;
     selector: 'my-app',
     templateUrl: './app/components/my-app/main.html',
     directives: [
-    PhaserComponent,
+      NG2_PHASER
   	],
-   template: `
-     <center>
-       <h1>Angular2 - Phaser Demo</h1>
-       <phaser (phaser)="phaserLink1($event)" [settings]="{file:'node_modules/phaser/build/phaser.min.js'}"></phaser>
-     </center>
-   `
+    template: `
+       <center>
+         <h2> Phaser + Angular 2 Demo</h2>
+         <phaser (phaser)="phaserLink1($event)"></phaser>
+       </center>
+    `
 })
 export class AppComponent {
-
 
    //---------------
    phaserLink1(phaser:any){
 
       var js = document.createElement("script");
           js.type = "text/javascript";
-          js.src = 'game/phaser1_demo.js';
+          js.src = '../../../node_modules/ang2-phaser/game_demos/phaser1_demo.js';
           document.body.appendChild(js);
           js.onload = function(){
              __phaser.game.init(phaser.container, this);
