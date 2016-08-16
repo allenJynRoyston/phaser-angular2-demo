@@ -1,6 +1,6 @@
 # Phaser - Angular 2 Demo Seed Project
 
-### Barebones Preview
+### Live Preview
 [Click here](https://phaser-angular2-demo.herokuapp.com/)
 
 ### Why?
