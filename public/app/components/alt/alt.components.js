@@ -48,4 +48,4 @@ var AltComponent = (function () {
     return AltComponent;
 }());
 exports.AltComponent = AltComponent;
-//# sourceMappingURL=about.components.js.map
+//# sourceMappingURL=alt.components.js.map

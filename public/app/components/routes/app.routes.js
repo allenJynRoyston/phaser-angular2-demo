@@ -1,7 +1,7 @@
 "use strict";
 var router_1 = require('@angular/router');
 var home_components_1 = require('../../components/home/home.components');
-var about_components_1 = require('../../components/about/about.components');
+var alt_components_1 = require('../../components/alt/alt.components');
 exports.routes = [
     {
         path: '',
@@ -9,7 +9,7 @@ exports.routes = [
     },
     {
         path: 'alt',
-        component: about_components_1.AltComponent
+        component: alt_components_1.AltComponent
     }
 ];
 exports.APP_ROUTER_PROVIDERS = [

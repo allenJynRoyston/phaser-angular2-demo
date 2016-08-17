@@ -1,12 +1,12 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 import { HomeComponent } from '../../components/home/home.components';
-import { AltComponent } from '../../components/about/about.components';
+import { AltComponent } from '../../components/alt/alt.components';
 
 
 export const routes: RouterConfig = [
   {
     path: '',
-    component: HomeComponent 
+    component: HomeComponent
   },
   {
     path: 'alt',
