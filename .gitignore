@@ -1,17 +1,18 @@
-.idea
-typings/**
-node_modules
-jspm_packages
-link-checker-results.txt
-**/*npm-debug.log.*
-*.js
-*.js.map
-_test-output
-_temp
+OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-!**/*e2e-spec.js
-!karma*.js
-!protractor*.js
-!systemjs.config.js
-!typings/typings.d.ts
-!wallaby.js
+# PACKAGES #
+######################
+node_modules/
+bower_components/
+public/node_modules/
+public/bower_components/
+
+# FILES #
+######################

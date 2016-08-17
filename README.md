@@ -1,110 +1,99 @@
-# Angular2/Phaser Seed Project
+# Express / Angular 2 Easy setup
 
-### What Am I?!
-I created this seed project based off my submission for the Angular Attack 2016 contest.  I wanted to share it as soon as I found a way to simplify it and clean it up.  [(Check out our submission here - and if you could, please vote for us!)](http://totallynotarobot.2016.angularattack.io/ "Angular Attack 2016")  If you want to integrate the components needed into an existing project, follow the instructions below in the Integration section.
-<br>
-This repo includes everything you need to get started.
-  - Phaser component
-  - Angular 2 Quickstart project
-  - [Don't know how to make games using Phaser?  Check out some examples - it's easy!](http://phaser.io/ "Phaser.io")  
+### NEW FEATURES!
 
-### Required
-  - NPM
-  - Typescript (Not required but highly recommended)
+July 25 2016:  Routing included by default.
+
+### Barebones Preview
+[Click here](https://express-angular2-seed.herokuapp.com/)
+
+### Why?
+
+Quite simply, Express is awesome and Angular 2 is awesome, but getting them to work isn't as fluid as you'd think it would be.  This package eliminates all the fuss and only includes the bare basics so you can customize your project the way you like.  Think of it like a clean Windows install; all the functionality you'd want without any of the bloatware.
+ 
+Install includes:
+  - Express 4.0 
+  - Angular 2 (Updated Angular version to rc.4; routing to 3.0.0-beta.2)
+  - Grunt (optional)
+  - File watching and automatic browser refresh (if grunt is running)
+
+Express side:
+  - Built in mobile/iPad/OS user detection (accessible throughtout the entire site)
+  - Quick API and routing setup
+  - Jade templating
   
+Angular 2 side:
+  - Built in mobile/iPad/OS user detection (accessible globally)
+  - Quick API and routing setup
+   
+Required:
+  - NPM (Node Package Manager)
+  - Atom editor *recommended, but not required (for easy Jade -> HTML auto compiling)
+  - Typescript *recommended, but again not required.
 
-### Install
-  - Download or clone this repo.
-  - npm install
-  - npm start
-  - Should load the default Angular2 quickstart page, initiate a preload, and then present an animated Phaser logo.
-  - make your game by editing the game/phaser1_demo.js file
-
-
-
-### Integration
-If you want to include Phaser in your own project, you'll have do the following steps.  You shouldn't have to alter any files; just follow the following instructions.
-
-1.) Grab the Phaser component and place it into your own project.  It can be found in <strong>app/components/phaser</strong> <br>
-2.)  Include it in your project.  
-```javascript
-import {PhaserComponent}  from '[folderLocation]/phaser/phaser'
+Install instructions:
+  - Clone this repo
+```sh
+git clone https://github.com/allenRoyston/Express-Angular2-Seed.git
 ```
-<br>
-3.)  Include it in your components directives.
-```javascript
-@Component({
-    directives: [
-       PhaserComponent,
-  	]
-})
+  - change to repo directory
+```sh
+$ cd myDirectory
 ```
-<br>
-4.)  Include it in your html as such: 
-```html
-<phaser (phaser)="phaserLink1($event)" [settings]="{file:'node_modules/phaser/build/phaser.min.js'}"></phaser>
+  - npm install 
+```sh
+$ npm install
 ```
-<br>
-4a.)  <strong>Make sure you've downloaded the phaser source code.</strong>    It's included in the repo but might not be in your project.  Include the file location in the <strong>settings</strong> parameter.<br>
-4b.)  You can install it from NPM:  npm install phaser --save-dev
+  - last few packages will error out (this is normal, just ignore)
+```sh
+npm ERR! peerinvalid Peer grunt-shell@1.3.0 wants grunt@>=0.4.0
+npm ERR! peerinvalid Peer grunt-contrib-watch@0.6.1 wants grunt@~0.4.0
+npm ERR! peerinvalid Peer load-grunt-tasks@3.5.0 wants grunt@>=0.4.0
+npm ERR! peerinvalid Peer grunt-concurrent@2.3.0 wants grunt@>=0.4.0
+npm ERR! peerinvalid Peer grunt-nodemon@0.4.2 wants grunt@>=0.4.0
+```
+  - start the server with grunt (will autorefresh the browser when changes are made)
+```sh
+$ grunt
+```
+  - or simply with (will not refresh the browser when changes are made)
+```sh
+$ npm start
+```
+  - Open up a browser of your choice (Chrome/Firefox/etc) and enter the url:  
+```sh
+http://localhost:3000/
+```
+  - A page that states:  "MEAN stack works!" and you're good!
 
-<br>
-5.)  In your component, make sure you include the following script.
-````script
-export class AppComponent {
+### Easy Deploy with Heroku
+Ensure that you have a valid, working Heroku repository.  Copy/paste/clone this repo into it.  Then:
+```sh
+$ git add . 
+$ git commit -m "it works!"
+$ git push heroku master
+```
 
+### Additional stuff
+- Grunt (if you're using it) will watch for changes on any html/css/js and refresh the browser automatically.
+- Typescript will convert any .ts into .js automatically.
+- Jade files can automatically be converted into HTML if using the Atom Plugin: Jade Auto-compiler.  
+- A very simple global variable is setup on the index page that can be accessed throught the entire site.  To access it (anywhere, regardless of script or component):  
+```sh
+$ console.log(_root.global)
 
-   //---------------
-   phaserLink1(phaser:any){
-
-      var js = document.createElement("script");
-          js.type = "text/javascript";
-          js.src = 'game/phaser1_demo.js';
-          document.body.appendChild(js);
-          js.onload = function(){
-             __phaser.game.init(phaser.container, this);
-          }
-   }
-   //---------------
-
-   //---------------
-   destroyGame(){
-      __phaser.destroyGame(function(){
-            // do something
-      });
-   }
-   //---------------
-
-
-}
-````
-
-6.)  It's <strong> HIGHLY RECOMMENDED </strong> you use a seed project game included in the repo.  It has custom init and destroy methods needed to get this to work with Angular 2.  
-
-<br>
-
-
-
-
-### Version
-1.0.1
-
-
-
-### Live Demo 
-[Check it out](http://totallynotarobot.2016.angularattack.io/ "Angular Attack 2016")
-
-
-### Dependencies
-- none (Phaser is included in the package.json)
-
-
-
-### Parameters
-
-
-
-License
-----
-
-MIT - go nuts y'all.
+// will return: 
+/*
+    _root = {
+      globals: {
+        enviroment: [production/development],
+        isMobile: [true/false],
+        isIphone: [true/false],
+        isIpad: [true/false],
+        isAndroid: [true/false],
+        userAgent: [string]
+      }
+    }
+*/
+```
+##### This feature can be removed entirely by removing it from the route/index.jade
